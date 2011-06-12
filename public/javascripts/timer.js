@@ -1,39 +1,57 @@
-var run = false;
+var running= false;
 var startTime = 0;
 var totalRunningSeconds = 0;
-
 var hoursRunning = "00";
 var hoursRunningPad = "";
-
 var minutesRunning = "00";
 var minutesRunningPad = "";
-
 var secondsRunning = "00";
 var secondsRunningPad = "";
-
 var formattedTime = "";
 var updateTimeID;
+var pauseSeconds = 0;
+var pauseTime; 
 
-function superSimpleTimer(){
-  if (run == false){
-    run = true;
+function startTimer(){
+  if (running== false){
+    running= true;
     startTime = new Date();
     updateTimeID = setInterval ( "updateTime()", 1000 );
-  } else {
-    run = false;
-    startTime = 0;
-    totalRunningSeconds = 0;
+  }
+}
+
+
+
+function pauseTimer(){
+  if (running==true){
+    running = false;
+    pauseSeconds = totalRunningSeconds;
+    pauseTime = formattedTime;
     clearInterval(updateTimeID);
-    {
-    document.getElementById("timer").innerHTML="";
-    }
-  } 
+  }
+}
+
+function resetTimer(){
+  running = false;
+  clearInterval(updateTimeID);
+  startTime = 0;
+  totalRunningSeconds = 0;
+  hoursRunning = "00";
+  hoursRunningPad = "";
+  minutesRunning = "00";
+  minutesRunningPad = "";
+  secondsRunning = "00";
+  secondsRunningPad = "";
+  formattedTime = "";
+  pauseSeconds = 0;
+  pauseTime = 0;
+  document.getElementById("timer").innerHTML = "00:00:00";
 }
 
 function updateTime(){
 
   var nowTime = new Date();
-  totalRunningSeconds = Math.floor((nowTime - startTime)/1000);  // Math.floor((nowTime - startTime)/1000);
+  totalRunningSeconds = pauseSeconds + Math.floor((nowTime - startTime)/1000);  // Math.floor((nowTime - startTime)/1000);
   
   // calculate the times
   
@@ -74,7 +92,5 @@ function updateTime(){
   formattedTime =   hoursRunningPad + hoursRunning + ":" + minutesRunningPad + minutesRunning + ":" + secondsRunningPad + secondsRunning;
   document.getElementById("timer").innerHTML = formattedTime;
 }
-
-
 
 
