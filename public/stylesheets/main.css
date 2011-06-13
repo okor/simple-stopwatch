@@ -1,0 +1,26 @@
+@font-face { 
+  font-family: 'Crystal'; 
+  font-style: normal;
+  font-weight: normal; 
+  src: url('../fonts/crystal-webfont.ttf') format('truetype'); 
+}
+
+@font-face { 
+  font-family: 'Rokkitt'; 
+  font-style: normal;
+  font-weight: normal; 
+  src: url('../fonts/Rokkitt.ttf') format('truetype'); 
+}
+
+/*#stopwatch {*/
+/*  color: #098cd9;*/
+/*  font-size: 36px;*/
+/*  font-family: 'Crystal', sans, serif;*/
+/*  letter-spacing: 2px;*/
+/*  text-shadow: 0px 0px 2px #098cd9;*/
+/*}*/
+
+html {
+  font-family: 'Rokkitt', arial, serif;
+  font-size: 40px;
+}

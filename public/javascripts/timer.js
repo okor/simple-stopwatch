@@ -28,6 +28,8 @@ function pauseTimer(){
     pauseSeconds = totalRunningSeconds;
     pauseTime = formattedTime;
     clearInterval(updateTimeID);
+  } else {
+    startTimer();
   }
 }
 
