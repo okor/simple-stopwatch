@@ -47,7 +47,7 @@ function resetTimer(){
   formattedTime = "";
   pauseSeconds = 0;
   pauseTime = 0;
-  document.getElementById("timer").innerHTML = "00:00:00";
+  document.getElementById("timer").innerHTML = '00<span class="stopwatch-colon">:</span>00<span class="stopwatch-colon">:</span>00';
 }
 
 function updateTime(){
@@ -91,7 +91,7 @@ function updateTime(){
     hoursRunningPad = "0";
   }
 
-  formattedTime =   hoursRunningPad + hoursRunning + ":" + minutesRunningPad + minutesRunning + ":" + secondsRunningPad + secondsRunning;
+  formattedTime =   hoursRunningPad + hoursRunning + "<span class='stopwatch-colon'>:</span>" + minutesRunningPad + minutesRunning + "<span class='stopwatch-colon'>:</span>" + secondsRunningPad + secondsRunning;
   document.getElementById("timer").innerHTML = formattedTime;
 }
 

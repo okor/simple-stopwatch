@@ -6,10 +6,10 @@
 }
 
 @font-face { 
-  font-family: 'Rokkitt'; 
+  font-family: 'FreeMono'; 
   font-style: normal;
   font-weight: normal; 
-  src: url('../fonts/Rokkitt.ttf') format('truetype'); 
+  src: url('../fonts/FreeMono.ttf') format('truetype'); 
 }
 
 /*#stopwatch {*/
@@ -21,6 +21,41 @@
 /*}*/
 
 html {
-  font-family: 'Rokkitt', arial, serif;
-  font-size: 40px;
+  font-family: FreeMono;
+  font-size: 20px;
 }
+
+body {
+  background-image: url('/images/bg.png');
+}
+
+#stopwatch_container {
+  width: 500px;
+  margin: 100px auto 0 auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background: #151515;
+  padding: 3px;
+  font-weight: bold;
+}
+
+#stopwatch {
+  font-size: 50px;
+}
+ 
+span.stopwatch-colon {
+  position: relative;
+  top: -5px;
+}
+
+
+
+
+
+
+
+

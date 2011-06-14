@@ -8,11 +8,13 @@
     <script src='/javascripts/timer.js'></script>
   </head>
   <body>
-    <a onclick="startTimer()" href="#">Start</a>
-    <a onclick="pauseTimer()" href="#">Pause</a>
-    <a onclick="resetTimer()" href="#">Reset</a>
-    <div id="stopwatch">
-      <p id="timer">00:00:00</p>
+    <div id="stopwatch_container">
+      <div id="stopwatch">
+        <p id="timer">00<span class="stopwatch-colon">:</span>00<span class="stopwatch-colon">:</span>00</p>
+      </div>
+      <a onclick="startTimer()" href="#">Start</a>
+      <a onclick="pauseTimer()" href="#">Pause</a>
+      <a onclick="resetTimer()" href="#">Reset</a>
     </div>
   </body>
 </html>
