@@ -10,7 +10,7 @@ var secondsRunningPad = "";
 var formattedTime = "";
 var updateTimeID;
 var pauseSeconds = 0;
-var pauseTime; 
+var pauseTime;
 
 function startTimer(){
   if (running== false){
@@ -92,7 +92,12 @@ function updateTime(){
   }
 
   formattedTime =   hoursRunningPad + hoursRunning + "<span class='stopwatch-colon'>:</span>" + minutesRunningPad + minutesRunning + "<span class='stopwatch-colon'>:</span>" + secondsRunningPad + secondsRunning;
+  
+  formattedTimeTitle =   hoursRunningPad + hoursRunning + ":" + minutesRunningPad + minutesRunning + ":" + secondsRunningPad + secondsRunning;
+  
+  
   document.getElementById("timer").innerHTML = formattedTime;
+  document.title = formattedTimeTitle;
 }
 
 
