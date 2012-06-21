@@ -12,9 +12,3 @@
   src: url('../fonts/FreeMono.ttf') format('truetype'); 
 }
 
-@font-face { 
-  font-family: 'Scoreboard'; 
-  font-style: normal;
-  font-weight: normal; 
-  src: url('../fonts/scoreboard.ttf') format('truetype'); 
-}
