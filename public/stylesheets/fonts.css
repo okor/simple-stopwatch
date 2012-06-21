@@ -1,4 +1,4 @@
-/*@font-face { 
+@font-face { 
   font-family: 'Crystal'; 
   font-style: normal;
   font-weight: normal; 
@@ -10,6 +10,11 @@
   font-style: normal;
   font-weight: normal; 
   src: url('../fonts/FreeMono.ttf') format('truetype'); 
-}*/
+}
 
-@import url(http://fonts.googleapis.com/css?family=Dosis|Arvo|Codystar|Michroma|Belgrano|Kelly+Slab|Rationale|Tulpen+One|Geostar+Fill|Quantico|Bangers|Pontano+Sans|Orbitron|Oswald|Wallpoet|Audiowide|Geo);
+@font-face { 
+  font-family: 'Scoreboard'; 
+  font-style: normal;
+  font-weight: normal; 
+  src: url('../fonts/scoreboard.ttf') format('truetype'); 
+}

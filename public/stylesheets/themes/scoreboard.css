@@ -1,0 +1,144 @@
+@font-face { 
+  font-family: 'Scoreboard'; 
+  font-style: normal;
+  font-weight: normal; 
+  src: url('../fonts/scoreboard.ttf') format('truetype'); 
+}
+
+html {
+  font-family: monospace;
+  font-size: 20px;
+}
+
+body {
+  background-image: url('/images/bg.png');
+}
+
+
+#buttons {
+  margin: 10px 0 0px 0;
+  padding: 20px;
+  border-radius: 5px;
+/*  background: rgba(0,4,0,0.2);*/
+}
+
+.button
+{        
+  display: inline-block;
+  white-space: nowrap;
+  background-color: #ccc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc));
+  background-image: -webkit-linear-gradient(top, #eee, #ccc);
+  background-image: -moz-linear-gradient(top, #eee, #ccc);
+  background-image: -ms-linear-gradient(top, #eee, #ccc);
+  background-image: -o-linear-gradient(top, #eee, #ccc);
+  background-image: linear-gradient(top, #eee, #ccc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+  border: 1px solid #777;
+  padding: 0 1.5em;
+  margin: 0.15em;
+  font: bold 1em/2em Arial, Helvetica;
+  text-decoration: none;
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255,255,255,.8);
+  border-radius: .2em;
+  box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+}
+
+.button:hover
+{
+  background-color: #ddd;        
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#ddd));
+  background-image: -webkit-linear-gradient(top, #fafafa, #ddd);
+  background-image: -moz-linear-gradient(top, #fafafa, #ddd);
+  background-image: -ms-linear-gradient(top, #fafafa, #ddd);
+  background-image: -o-linear-gradient(top, #fafafa, #ddd);
+  background-image: linear-gradient(top, #fafafa, #ddd);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');        
+}
+
+.button:active
+{
+  -moz-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+  -webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+  box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+  position: relative;
+  top: 1px;
+}
+
+.button:focus
+{
+  outline: 0;
+  background: #fafafa;
+}    
+
+.button:before
+{
+  background: #ccc;
+  background: rgba(0,0,0,.1);
+  float: left;        
+  width: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0 1em 0 -1em;
+  padding: 0 .2em;
+  box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+  border-radius: .15em 0 0 .15em;
+  pointer-events: none;        
+}
+
+
+#stopwatch_container {
+  width: 600px;
+  margin: 50px auto 0 auto;
+
+  text-align: center;
+
+  padding: 10px;
+  border-radius: 15px;
+  background: rgba(0,0,0,0.2);
+
+  background-image: linear-gradient(bottom, rgb(196,196,196) 16%, rgb(237,237,237) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(196,196,196) 16%, rgb(237,237,237) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(196,196,196) 16%, rgb(237,237,237) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(196,196,196) 16%, rgb(237,237,237) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(196,196,196) 16%, rgb(237,237,237) 100%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.16, rgb(196,196,196)),
+    color-stop(1, rgb(237,237,237))
+  );
+
+  box-shadow: 0 0 10px #000;
+}
+
+#stopwatch {
+  font-size: 120px;
+  font-family: monospace;
+  font-family: 'Scoreboard', sans-serif;
+
+
+  padding: 0 10px 10px 10px;
+  border-radius: 10px;
+/*  box-shadow: 0 0 5px #000;*/
+
+  color: #E5EA5C;
+  background: #000;
+  text-align: center;
+
+  text-shadow: 0 0 10px #E5EA5C;
+}
+
+
+
+
+
+
+
+
+
+
+
