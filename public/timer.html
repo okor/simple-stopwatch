@@ -6,8 +6,9 @@
     <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/fonts.css">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/themes/scoreboard.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/font-awesome.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/themes/rams.css">
 
     <script src='/javascripts/timer.js'></script>
   </head>
@@ -16,15 +17,17 @@
     <div id="stopwatch_container">
 
       <div id="stopwatch">
-        <p id="timer">00<span class="stopwatch-colon">:</span>00<span class="stopwatch-colon">:</span>00</p>
+        <p id="timer">00<span>:</span>00<span>:</span>00</p>
       </div>
 
       <div class="clear"></div>
 
       <div id="buttons">
-        <a onclick="startTimer()" class="button" href="#">Start</a>
-        <a onclick="pauseTimer()" class="button" href="#">Pause</a>
-        <a onclick="resetTimer()" class="button" href="#">Reset</a>
+        <a onclick="startTimer()" class="button" href="#"><i class="icon-play"></i></a>
+
+        <a onclick="pauseTimer()" class="button" href="#"><i class="icon-pause"></i></a>
+
+        <a onclick="resetTimer()" class="button" href="#"><i class="icon-repeat"></i></a>
         <div class="clear"></div>
       </div>
 

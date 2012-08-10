@@ -1,14 +1,13 @@
-@font-face { 
-  font-family: 'Crystal'; 
+@font-face {
+  font-family: 'Crystal';
   font-style: normal;
-  font-weight: normal; 
-  src: url('../fonts/crystal-webfont.ttf') format('truetype'); 
+  font-weight: normal;
+  src: url('../fonts/crystal-webfont.ttf') format('truetype');
 }
 
-@font-face { 
-  font-family: 'FreeMono'; 
+@font-face {
+  font-family: 'FreeMono';
   font-style: normal;
-  font-weight: normal; 
-  src: url('../fonts/FreeMono.ttf') format('truetype'); 
+  font-weight: normal;
+  src: url('../fonts/FreeMono.ttf') format('truetype');
 }
-

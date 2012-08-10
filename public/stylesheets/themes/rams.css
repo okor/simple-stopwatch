@@ -1,0 +1,63 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  color: #6E6F6F;
+  background: #e5e5e5;
+}
+
+#stopwatch_container {
+  width: 400px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+#timer {
+  font-size: 100px;
+  padding-bottom: 50px;
+}
+
+
+
+.button
+{
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+
+.button:hover {
+  text-shadow: 0 0 1px #000;
+}
+
+.button:active {
+
+}
+
+.button:focus {
+
+}
+
+.button:before {
+  border: 5px;
+}
+
+
+
+
+#stopwatch {
+
+}
+
+
+
+
+
+
+
+
+
+
+
