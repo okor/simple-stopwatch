@@ -10,7 +10,11 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/stylesheets/themes/rams.css">
 
+    <script src='/javascripts/jquery-1.6.1.min.js'></script>
+    <script src='/javascripts/animate.js'></script>
+    <script src='/javascripts/effects.js'></script>
     <script src='/javascripts/timer.js'></script>
+
   </head>
   <body>
 
@@ -23,11 +27,9 @@
       <div class="clear"></div>
 
       <div id="buttons">
-        <a onclick="startTimer()" class="button" href="#"><i class="icon-play"></i></a>
-
-        <a onclick="pauseTimer()" class="button" href="#"><i class="icon-pause"></i></a>
-
-        <a onclick="resetTimer()" class="button" href="#"><i class="icon-repeat"></i></a>
+        <a id="start" onclick="startTimer();" class="button" href="#"><i class="icon-play"></i></a>
+        <a id="pause" onclick="pauseTimer()" class="button" href="#"><i class="icon-pause"></i></a>
+        <a id="reset" onclick="resetTimer()" class="button" href="#"><i class="icon-repeat"></i></a>
         <div class="clear"></div>
       </div>
 

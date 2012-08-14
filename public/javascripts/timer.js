@@ -28,8 +28,6 @@ function pauseTimer(){
     pauseSeconds = totalRunningSeconds;
     pauseTime = formattedTime;
     clearInterval(updateTimeID);
-  } else {
-    startTimer();
   }
 }
 
@@ -54,48 +52,48 @@ function updateTime(){
 
   var nowTime = new Date();
   totalRunningSeconds = pauseSeconds + Math.floor((nowTime - startTime)/1000);  // Math.floor((nowTime - startTime)/1000);
-  
+
   // calculate the times
-  
+
   // seconds
   secondsRunning = totalRunningSeconds % 60;
-  if (secondsRunning >= 10){ 
-    secondsRunningPad = ""; 
+  if (secondsRunning >= 10){
+    secondsRunningPad = "";
   } else {
     secondsRunningPad = "0";
   }
-  
+
   //minutes
   if (totalRunningSeconds < 60) {
     minutesRunning = 0;
   } else {
     minutesRunning = Math.floor(totalRunningSeconds / 60) % 60;
   }
-  
-  // hours  
+
+  // hours
   if (totalRunningSeconds < 3600){
     hoursRunning = 0;
   } else {
     hoursRunning = Math.floor(totalRunningSeconds / 3600) % 60;
-  } 
-  
-  if (minutesRunning >= 10){ 
-    minutesRunningPad = ""; 
+  }
+
+  if (minutesRunning >= 10){
+    minutesRunningPad = "";
   } else {
     minutesRunningPad = "0";
   }
 
-  if (hoursRunning >= 10){ 
-    hoursRunningPad = ""; 
+  if (hoursRunning >= 10){
+    hoursRunningPad = "";
   } else {
     hoursRunningPad = "0";
   }
 
   formattedTime =   hoursRunningPad + hoursRunning + "<span class='stopwatch-colon'>:</span>" + minutesRunningPad + minutesRunning + "<span class='stopwatch-colon'>:</span>" + secondsRunningPad + secondsRunning;
-  
+
   formattedTimeTitle =   hoursRunningPad + hoursRunning + ":" + minutesRunningPad + minutesRunning + ":" + secondsRunningPad + secondsRunning;
-  
-  
+
+
   document.getElementById("timer").innerHTML = formattedTime;
   document.title = formattedTimeTitle;
 }
