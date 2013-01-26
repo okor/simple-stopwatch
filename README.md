@@ -5,7 +5,7 @@ For a live demo, check out: http://stopwatch.jasonormand.com
 
 I built it for fun and I use it for freelance projects, to keep track of my time.
 
-![Screenshot](http://github.com/okor/rack-stopwatch/raw/master/screenshot.png)
+![Screenshot](http://github.com/okor/simple-stopwatch/raw/master/screenshot.png)
 
 
 Run it locally
