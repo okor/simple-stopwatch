@@ -1,7 +1,7 @@
-This is a simple Rack app, with a stopwatch. It's occasionally helpful.
+This is a very simple stopwatch. It's occasionally helpful.
 =========================================
 
-For a live demo, check out: http://stopwatch.jasonormand.com
+Use or demo here: http://stopwatch.jasonormand.com
 
 ![Screenshot](http://github.com/okor/simple-stopwatch/raw/master/screenshot.png)
 
